@@ -1,222 +1,339 @@
-body{
-	font-family: 'Exo 2';
+body {
+	font-family: 'Gotham Pro';
+}
 
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-top: 45px;
 }
-header{
-	background-image: url('../img/5.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.btn{
+
+.btn {
 	transition: all 0.5s ease;
 }
-.kind-a-nav{
-	padding: 25px;
+
+.kind-a-nav {
+	display: flex;
+	align-items: center;
+}
+
+.phone p:first-child {
+	font-size: 1.1em;
 	color: white;
+	line-height: 0.9;
+	font-weight: 100;
 }
-.cta{
-	height: 100vh;
-	padding: 0 45px;
-	background-color: rgba(0,0,0,0.6);
+
+.phone p:last-child {
+	font-size: 2.2em;
+	color: white;
+	line-height: 0.9;
+	margin: 0;
 }
-.contact-us{
+
+.cta {
+	background-image: url('../img/cover.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.cta-overlay {
+	padding: 150px 0 0 0;
+	background-color: rgba(0, 0, 0, 0.6);	min-height: 100vh;
+		align-items: center;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+.cta-inner {
+	height: auto;
+}
+
+.contact-us {
 	padding: 15px 0 45px 0;
 }
-.phone2{
+
+.phone2 {
 	margin-bottom: 35px;
 }
-.logo{
+
+.logo {
 	width: 100px;
 	height: 100px;
 	background-color: #006699;
 }
-.topia{
+
+.topia {
 	margin-top: 120px;
 }
-.title{
-	font-size: 5.4em;
-	font-weight: 700;
+
+.title {
+	font-size: 4em;
+	font-weight: 900;
 	color: white;
 	text-transform: uppercase;
 }
 
-.ubertitle{
+.ubertitle {
 	font-size: 3.4em;
 	font-weight: 700;
 	color: white;
 	text-transform: uppercase;
 	margin-bottom: 35px;
 }
-.subtitle{
+
+.subtitle {
 	color: white;
 	font-size: 2.4em;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+	font-weight: 100;
 }
 
-.subtitle2{
+.subtitle2 {
 	margin-bottom: 25px;
 }
-.nums{
-	background-color: #006699;
+
+.nums {
+	/*background-color: #006699;*/
+	/*border-top: 1px white solid;*/
 	color: white;
 	bottom: 0;
 	width: 100%;
 }
-.nums>div{
-	padding: 25px 0;
+
+.nums>div {
+	padding: 50px 0;
 }
-.stat{
+
+.nums-title {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 2.4em;
+}
+
+.nums-title:before,
+.nums-title:after {
+	flex-grow: 1;
+	height: 1px;
+	content: '\a0';
+	background-color: #ddd;
+	position: relative;
+	top: 0.5em;
+}
+
+.nums-title:before {
+	margin-right: 10px;
+}
+
+.nums-title:after {
+	margin-left: 10px;
+}
+
+.stat {
 	font-size: 5em;
 	font-weight: 700;
 	line-height: .8;
+	text-align: center;
 }
-.unit{
-	line-height: 1.5;
+
+.unit {
+	/*line-height: 1.5;*/
 	font-size: 2.3em;
 	font-weight: 300;
+	text-align: center;
 }
-.desc{
-	line-height: 1.5;
-	font-size: 1.2em;
+
+.desc {
+	/*line-height: 1.5;*/
+	font-size: 1.5em;
 	font-weight: 300;
+	text-align: center;
 }
+
 .feat-img {
 	height: 80px;
 }
-.feat-unit{
+
+.feat-unit {
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.feat1{
+
+.feat1 {
 	padding: 25px 0;
 }
-.feat2{
+
+.feat2 {
 	padding: 60px 0;
 }
-.feat4{
+
+.feat4 {
 	background-color: #009966;
 	padding: 60px 0;
 }
-.feat-title{
+
+.feat-title {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 40px;
 }
-.feat-text{
+
+.feat-text {
 	font-size: 1.83em;
 	font-weight: 300;
 	text-align: center;
 }
-.feat-text2{
+
+.feat-text2 {
 	font-size: 1.83em;
 	font-weight: 300;
 	text-align: left;
 	color: white;
 }
-.feat-label{
+
+.feat-label {
 	font-weight: 300;
 }
-.phone{
-	font-size: 2.2em;
-	color: white;
-	line-height: 0.9;
-}
-footer{
+
+footer {
 	background-color: #006699;
 	color: white;
 	padding: 15px 0 0 0;
 }
-.copyrights{
+
+.copyrights {
 	padding: 15px 0 5px 0;
 }
-.map-responsive{
-    overflow:hidden;
-    padding-bottom: 30%;
-    position:relative;
-    height: 90vh;
+
+.map-responsive {
+	overflow: hidden;
+	padding-bottom: 30%;
+	position: relative;
+	height: 90vh;
 }
-.sample-images{
+
+.sample-images {
 	/*margin-bottom: 25px;*/
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
-.tipaimaga{
-	height: 230px; width: auto; background-color: #006699;
+
+.tipaimaga {
+	height: 230px;
+	width: auto;
+	background-color: #006699;
 }
-@media (max-width: 767px) {
-	.map-responsive{
-    height: 400px;
-}
-.tipaimaga{
-	height: 150px; width: auto; background-color: #006699;
-}
-	.phone{
-		font-size: 1.5em;
+
+@media (max-width: 768px) {
+	.map-responsive {
+		height: 400px;
 	}
-	.cta{
-		height: auto;
+	.tipaimaga {
+		height: 150px;
+		width: auto;
+		background-color: #006699;
+	}
+	.phone p:first-child {
+		font-size: .7em;
+		color: white;
+		line-height: 0.9;
+		font-weight: 100;
+	}
+	.phone p:last-child {
+		font-size: 1.5em;
+		color: white;
+		line-height: 0.9;
+		margin: 0;
+	}
+	.cta {
 		padding: 0;
 	}
-	.title{
+	.cta-overlay {
+		height: auto;
+		padding: 120px 0 60px 0;
+	}
+	.title {
 		font-size: 1.8em;
 	}
-	.ubertitle{
+	.ubertitle {
 		font-size: 1.8em;
 	}
-	.subtitle{
+	.subtitle {
 		font-size: 1.4em;
 		margin-bottom: 60px;
 	}
-	.subtitle2{
-	margin-bottom: 25px;
-}
-	.logo{
+	.nums-title {
+		font-size: 1.4em
+	}
+	.subtitle2 {
+		margin-bottom: 25px;
+	}
+	.logo {
 		height: 60px;
 		width: 60px;
 	}
-	.kind-a-nav{
+	.kind-a-nav {
 		padding: 10px 0;
 		color: white;
 	}
-	.nums>div{
+	.nums>div {
 		padding: 25px 0;
 	}
-	.stat{
+	.primary {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	.stat {
 		font-size: 3em;
 		font-weight: 700;
 		line-height: .8;
+		margin-right: 5px;
 	}
-	.feat-unit{
+	.desc {
+		font-size: 2em;
+	}
+	.feat-unit {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	.feat-img {
 		height: 40px;
 	}
-	.feat-title{
+	.feat-title {
 		text-transform: uppercase;
 		font-weight: 700;
 		margin-bottom: 40px;
 	}
-	.unit, .feat-title{
+	.unit,
+	.feat-title {
 		line-height: 1.5;
 		font-size: 1.5em;
 	}
-	.desc, .feat-label{
+	.desc,
+	.feat-label {
 		line-height: 1.5;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
-	.feat-text, .feat-text2{
+	.feat-text,
+	.feat-text2 {
 		font-size: 1.1em;
 		font-weight: 300;
 		text-align: left;
 	}
-	.topia{
+	.topia {
 		margin-top: 60px;
 	}
 }

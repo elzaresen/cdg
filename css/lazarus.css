@@ -40,8 +40,9 @@ header {
 
 .cta-overlay {
 	padding: 150px 0 0 0;
-	background-color: rgba(0, 0, 0, 0.6);	min-height: 100vh;
-		align-items: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	min-height: 100vh;
+	align-items: center;
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
@@ -156,12 +157,13 @@ header {
 }
 
 .feat-img {
-	height: 80px;
+	height: 35px;
+	display: inline;
 }
 
 .feat-unit {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .feat1 {
@@ -181,6 +183,7 @@ header {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 40px;
+	font-size: 36px;
 }
 
 .feat-text {
@@ -197,9 +200,15 @@ header {
 }
 
 .feat-label {
+	font-size: 1.2em;
+	font-weight: 300;
+	display: inline;
+	margin-left: 10px;
+}
+.about-text{
+	font-size: 1.3em;
 	font-weight: 300;
 }
-
 footer {
 	background-color: #006699;
 	color: white;
@@ -235,7 +244,85 @@ footer {
 	background-color: #006699;
 }
 
+.main-carousel {
+	min-height: 550px;
+	height: 95vh;
+}
+
+.carousel-cell {
+	background: #006699;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.building {
+	color: white;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	margin-right: 25px;
+}
+
+.building-type {
+	padding: 0;
+	margin: 0;
+}
+
+.building-type>span {
+	background-color: red;
+	padding: 10px;
+}
+
+.building-name {
+	background-color: white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	max-width: 500px;
+	color: black;
+	/*margin-left: -2px;*/
+}
+
+.building-size {
+	background-color: white;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 500px;
+	color: black;
+	/*margin-left: -2px;*/
+}
+
+.building-address {
+	background-color: white;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 500px;
+	color: black;
+	/*margin-left: -2px;*/
+}
+
+.static-banner {
+	position: absolute;
+	background: hsla(0, 0%, 0%, 0.3);
+	z-index: 1;
+	padding: 2px 20px;
+	color: white;
+	pointer-events: none;
+}
+
+.static-banner:first-child {
+	top: 25px;
+	left: 25px;
+}
+
 @media (max-width: 768px) {
+.feat-unit{
+text-align: center;
+}
 	.map-responsive {
 		height: 400px;
 	}
@@ -317,16 +404,19 @@ footer {
 		font-weight: 700;
 		margin-bottom: 40px;
 	}
+	.building-name,
 	.unit,
 	.feat-title {
 		line-height: 1.5;
 		font-size: 1.5em;
 	}
+	.building-type>span,
 	.desc,
 	.feat-label {
 		line-height: 1.5;
 		font-size: 1em;
 	}
+	.building-size,
 	.feat-text,
 	.feat-text2 {
 		font-size: 1.1em;
